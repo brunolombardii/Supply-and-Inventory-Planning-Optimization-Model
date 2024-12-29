@@ -73,8 +73,15 @@ Backorder Penalty:
 Penalty for Unmet Minimum Order:
   ```math
    penalidad[i, t] \cdot 10^{10} \geq q\_min[i] - q[i, t]
+```
+
+ ```math
    penalidad2[i, t] \cdot 10^{10} \geq q[i, t]
+```
+
+```math
    penalidad3[i, t] \geq \frac{penalidad[i, t] + penalidad2[i, t]}{2} - 0.9
+```
 
 Final Inventory Constraints (Inputs):
   ```math
